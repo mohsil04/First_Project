@@ -1,0 +1,209 @@
+/* Your custom styles go here.
+   Use Bootstrap classes first, and write your own CSS only when you need to. */
+
+*{   
+    margin: 0;
+}
+
+body {
+   overflow-x: hidden; 
+}
+
+
+   .table td:last-child {
+    white-space: nowrap;
+}
+
+
+@media (max-width: 576px) {
+    .d-flex.justify-content-between.align-items-center.mb-3 {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 10px;
+    }
+
+    .d-flex.align-items-center.gap-2 {
+        justify-content: space-between;
+    }
+}
+
+
+
+.navbar-custom,
+.footer {
+    background-color: #0f172a;
+    color: white;
+}
+
+.navbar-custom .navbar-brand {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+
+
+.summary-cards > div:nth-child(1) {
+  background-color: #e3f2fd;
+}
+
+.summary-cards > div:nth-child(2) {
+  background-color: #e8f5e9;
+}
+
+.summary-cards > div:nth-child(3) {
+  background-color: #e0fdff;
+}
+
+
+.add-expense-card {
+    background-color: #f8f9fa;
+}
+
+
+
+.expenses-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius:10p;
+    
+    
+}
+
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+
+body.dark-mode .add-expense-card {
+    background-color: #1e293b;
+    color: white;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #111827;
+    color: white;
+    border-color: #4b5563;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #9ca3af;
+}
+
+body.dark-mode .expenses-section {
+    background-color: #1e293b;
+    color: white;
+}
+
+
+
+
+body.dark-mode .table {
+    --bs-table-bg: #1e293b;
+    --bs-table-color: white;
+    --bs-table-striped-bg: #263449;
+    --bs-table-striped-color: white;
+    --bs-table-hover-bg: #334155;
+    --bs-table-hover-color: white;
+    --bs-table-border-color: #4b5563;
+}
+
+body.dark-mode .table thead {
+    --bs-table-bg: #111827;
+    --bs-table-color: white;
+}
+
+
+
+
+body.dark-mode .modal-content {
+  background-color: #1e293b;
+  color: white;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+  border-color: #4b5563;
+}
+body.dark-mode .btn-close {
+  filter: invert(1);
+}
+
+
+
+body.dark-mode .navbar-custom,
+body.dark-mode .footer {
+    background-color: #000000;
+}
+
+
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+body.dark-mode .summary-cards > div:nth-child(1),
+body.dark-mode .summary-cards > div:nth-child(2),
+body.dark-mode .summary-cards > div:nth-child(3) {
+  background-color: #1e293b;
+  color: white;
+}
+
+
+.chart-section {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chart962 {
+  max-width: 500px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+
+body.dark-mode .card-body{
+  background-color: #1e293b;
+  color: white;
+  
+}
+
+
+body.dark-mode .card{
+   border-color:#0f172a ;
+}
+
+
+#darkModeButton {
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+@media (max-width: 576px) {
+  #darkModeButton {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+
+.table th[data-sort] {
+  cursor: pointer;
+}
